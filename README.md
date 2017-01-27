@@ -1,0 +1,2 @@
+Terrorism news app
+==================
