@@ -8,6 +8,32 @@
 </head>
 <body>
   <h1>50 deadlisest terrorist attacks in western Europe</h1>
+  <table border=1 cellpadding=7>
+    <tr>
+      <th>Country</th>
+      <th>City</th>
+      <th>Year</th>
+      <th>Type of attack</th>
+      <th>Target</th>
+      <th>Number of dead</th>
+      <th>Terrorist organisation</th>
+      <th>Motive</th>
+      <th>Weapons</th>
+    </tr>
+    {% for obj in object_list %}
+    <tr>
+      <td>{{ obj.country_txt}}</td>
+      <td>{{ obj.city }}</td>
+      <td>{{ obj.iyear }}</td>
+      <td>{{ obj.attacktype1_txt}}</td>
+      <td>{{ obj.target1 }}</td>
+      <td>{{ obj.nkill }}</td>
+      <td>{{ obj.gname }}</td>
+      <td>{{ obj.motive }}</td>
+      <td>{{ obj.weapdetail}}</td>
+    </tr>
+    {% endfor %}
+  </table>
 
 </body>
 </html>
