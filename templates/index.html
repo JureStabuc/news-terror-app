@@ -4,13 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-  <title>Document</title>
+  <title>Terror</title>
 </head>
 <body>
+  <!-- <nav>
+    <a href="">
+      <img src="">
+    </a>
+  </nav> -->
+  <header>
+    <h1>50 worst acts of terrorism in Western Europe</h1>
+    <div class="byline">
+      By <a href="https://twitter.com/JureStabuc">Jure Stabuc</a>
+    </div>
+  </header>
   <div id="map" style="width:100%; height:400px;"></div>
-  <h1>50 deadlisest terrorist attacks in western Europe</h1>
   <table border=1 cellpadding=7>
     <tr>
       <th>City</th>
@@ -20,8 +31,8 @@
       <th>Target</th>
       <th>Number of dead</th>
       <th>Terrorist organisation</th>
-      <th>Motive</th>
-      <th>Weapons</th>
+      <!-- <th>Motive</th> -->
+      <!-- <th>Weapons</th> -->
     </tr>
     {% for obj in object_list %}
     <tr>
@@ -32,8 +43,8 @@
       <td><a href="{{ obj.id }}/">{{ obj.target1 }}</a></td>
       <td><a href="{{ obj.id }}/">{{ obj.nkill }}</a></td>
       <td><a href="{{ obj.id }}/">{{ obj.gname }}</a></td>
-      <td><a href="{{ obj.id }}/">{{ obj.motive }}</a></td>
-      <td><a href="{{ obj.id }}/">{{ obj.weapdetail}}</a></td>
+      <!-- <td><a href="{{ obj.id }}/">{{ obj.motive }}</a></td> -->
+      <!-- <td><a href="{{ obj.id }}/">{{ obj.weapdetail}}</a></td> -->
     </tr>
     {% endfor %}
   </table>

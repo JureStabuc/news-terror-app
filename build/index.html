@@ -4,13 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/static/style.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-  <title>Document</title>
+  <title>Terror</title>
 </head>
 <body>
+  <!-- <nav>
+    <a href="">
+      <img src="">
+    </a>
+  </nav> -->
+  <header>
+    <h1>50 worst acts of terrorism in Western Europe</h1>
+    <div class="byline">
+      By <a href="https://twitter.com/JureStabuc">Jure Stabuc</a>
+    </div>
+  </header>
   <div id="map" style="width:100%; height:400px;"></div>
-  <h1>50 deadlisest terrorist attacks in western Europe</h1>
   <table border=1 cellpadding=7>
     <tr>
       <th>City</th>
@@ -20,8 +31,8 @@
       <th>Target</th>
       <th>Number of dead</th>
       <th>Terrorist organisation</th>
-      <th>Motive</th>
-      <th>Weapons</th>
+      <!-- <th>Motive</th> -->
+      <!-- <th>Weapons</th> -->
     </tr>
     
     <tr>
@@ -31,9 +42,9 @@
       <td><a href="1/">Bombing/Explosion</a></td>
       <td><a href="1/">Boeing 747 Aircraft</a></td>
       <td><a href="1/">270</a></td>
-      <td><a href="1/">Unknown</a></td>
-      <td><a href="1/"></a></td>
-      <td><a href="1/">Explosive</a></td>
+      <td><a href="1/">Libya</a></td>
+      <!-- <td><a href="1/"></a></td> -->
+      <!-- <td><a href="1/">Explosive</a></td> -->
     </tr>
     
     <tr>
@@ -44,8 +55,8 @@
       <td><a href="2/">Concert Hall</a></td>
       <td><a href="2/">92</a></td>
       <td><a href="2/">Islamic State of Iraq and the Levant (ISIL)</a></td>
-      <td><a href="2/">The Islamic State of Iraq and the Levant (ISIL) claimed responsibility for the incident and stated that the attack was carried out in retaliation for France&#39;s participation in the United States-led coalition that carried out airstrikes on ISIL targets in Iraq and Syria.</a></td>
-      <td><a href="2/">Three explosives-laden vests and AK-47s were used in the attack.</a></td>
+      <!-- <td><a href="2/">The Islamic State of Iraq and the Levant (ISIL) claimed responsibility for the incident and stated that the attack was carried out in retaliation for France&#39;s participation in the United States-led coalition that carried out airstrikes on ISIL targets in Iraq and Syria.</a></td> -->
+      <!-- <td><a href="2/">Three explosives-laden vests and AK-47s were used in the attack.</a></td> -->
     </tr>
     
     <tr>
@@ -56,8 +67,8 @@
       <td><a href="3/">Boing 707 Acft en route Tel Aviv to New York</a></td>
       <td><a href="3/">88</a></td>
       <td><a href="3/">Popular Front for the Liberation of Palestine, Gen Cmd (PFLP-GC)</a></td>
-      <td><a href="3/"></a></td>
-      <td><a href="3/">Explosive</a></td>
+      <!-- <td><a href="3/"></a></td> -->
+      <!-- <td><a href="3/">Explosive</a></td> -->
     </tr>
     
     <tr>
@@ -68,8 +79,8 @@
       <td><a href="4/">Central Station (RR)</a></td>
       <td><a href="4/">76</a></td>
       <td><a href="4/">Armed Revolutionary Nuclei (NAR)</a></td>
-      <td><a href="4/"></a></td>
-      <td><a href="4/">Plastic explosive; Explosive - TNT</a></td>
+      <!-- <td><a href="4/"></a></td> -->
+      <!-- <td><a href="4/">Plastic explosive; Explosive - TNT</a></td> -->
     </tr>
     
     <tr>
@@ -80,8 +91,8 @@
       <td><a href="5/">Indiscriminate civilians on commuter trains in Madrid, Spain.</a></td>
       <td><a href="5/">73</a></td>
       <td><a href="5/">Abu Hafs al-Masri Brigades</a></td>
-      <td><a href="5/">Abu Hafs al-Masri Brigades said that the attack was retribution for Spain&#39;s cooperation with the United States in the Iraq War.</a></td>
-      <td><a href="5/">Twenty two pounds of explosives were located in backpacks and detonated by cell phones.</a></td>
+      <!-- <td><a href="5/">Abu Hafs al-Masri Brigades said that the attack was retribution for Spain&#39;s cooperation with the United States in the Iraq War.</a></td> -->
+      <!-- <td><a href="5/">Twenty two pounds of explosives were located in backpacks and detonated by cell phones.</a></td> -->
     </tr>
     
     <tr>
@@ -91,9 +102,9 @@
       <td><a href="6/">Armed Assault</a></td>
       <td><a href="6/">Civilians</a></td>
       <td><a href="6/">69</a></td>
-      <td><a href="6/">Unaffiliated Individual(s)</a></td>
-      <td><a href="6/">The specific motive for the attack was Anders Breivikäó»s belief that Labor Party is Marxist-oriented and encourages multiculturalism.</a></td>
-      <td><a href="6/">A semi-automatic, 5.56 caliber Ruger Mini-14 rifle and a 9 millimeter Glock pistol were used in the attack.</a></td>
+      <td><a href="6/">Anders Behring Breivik</a></td>
+      <!-- <td><a href="6/">The specific motive for the attack was Anders BreivikÈs belief that Labor Party is Marxist-oriented and encourages multiculturalism.</a></td> -->
+      <!-- <td><a href="6/">A semi-automatic, 5.56 caliber Ruger Mini-14 rifle and a 9 millimeter Glock pistol were used in the attack.</a></td> -->
     </tr>
     
     <tr>
@@ -104,8 +115,8 @@
       <td><a href="7/">Indiscriminate civilians on commuter trains in Madrid, Spain.</a></td>
       <td><a href="7/">62</a></td>
       <td><a href="7/">Abu Hafs al-Masri Brigades</a></td>
-      <td><a href="7/">Abu Hafs al-Masri Brigades said that the attack was retribution for Spain&#39;s cooperation with the United States in the Iraq War.</a></td>
-      <td><a href="7/">Twenty two pounds of explosives were located in backpacks and detonated by cell phones.</a></td>
+      <!-- <td><a href="7/">Abu Hafs al-Masri Brigades said that the attack was retribution for Spain&#39;s cooperation with the United States in the Iraq War.</a></td> -->
+      <!-- <td><a href="7/">Twenty two pounds of explosives were located in backpacks and detonated by cell phones.</a></td> -->
     </tr>
     
     <tr>
@@ -116,8 +127,8 @@
       <td><a href="8/">Jetliner Flight 648</a></td>
       <td><a href="8/">60</a></td>
       <td><a href="8/">Abu Nidal Organization (ANO)</a></td>
-      <td><a href="8/"></a></td>
-      <td><a href="8/">Pistols; Grenades</a></td>
+      <!-- <td><a href="8/"></a></td> -->
+      <!-- <td><a href="8/">Pistols; Grenades</a></td> -->
     </tr>
     
     <tr>
@@ -128,8 +139,8 @@
       <td><a href="9/">Swiss Air DC-9</a></td>
       <td><a href="9/">47</a></td>
       <td><a href="9/">Popular Front for the Liberation of Palestine, Gen Cmd (PFLP-GC)</a></td>
-      <td><a href="9/"></a></td>
-      <td><a href="9/">Explosive</a></td>
+      <!-- <td><a href="9/"></a></td> -->
+      <!-- <td><a href="9/">Explosive</a></td> -->
     </tr>
     
     <tr>
@@ -139,9 +150,9 @@
       <td><a href="10/">Facility/Infrastructure Attack</a></td>
       <td><a href="10/">Nightclub</a></td>
       <td><a href="10/">37</a></td>
-      <td><a href="10/">Unknown</a></td>
-      <td><a href="10/"></a></td>
-      <td><a href="10/">Incendiary</a></td>
+      <td><a href="10/">John Thompson</a></td>
+      <!-- <td><a href="10/"></a></td> -->
+      <!-- <td><a href="10/">Incendiary</a></td> -->
     </tr>
     
     <tr>
@@ -152,464 +163,476 @@
       <td><a href="11/">Indiscriminate civilians on commuter trains in Madrid, Spain.</a></td>
       <td><a href="11/">37</a></td>
       <td><a href="11/">Abu Hafs al-Masri Brigades</a></td>
-      <td><a href="11/">Abu Hafs al-Masri Brigades said that the attack was retribution for Spain&#39;s cooperation with the United States in the Iraq War.</a></td>
-      <td><a href="11/">Twenty two pounds of explosives were located in backpacks and detonated by cell phones.</a></td>
+      <!-- <td><a href="11/">Abu Hafs al-Masri Brigades said that the attack was retribution for Spain&#39;s cooperation with the United States in the Iraq War.</a></td> -->
+      <!-- <td><a href="11/">Twenty two pounds of explosives were located in backpacks and detonated by cell phones.</a></td> -->
     </tr>
     
     <tr>
       <td><a href="12/">Rome</a></td>
       <td><a href="12/">Italy</a></td>
       <td><a href="12/">1973</a></td>
-      <td><a href="12/">Hijacking</a></td>
-      <td><a href="12/">B-737</a></td>
-      <td><a href="12/">31</a></td>
-      <td><a href="12/">Unknown</a></td>
-      <td><a href="12/"></a></td>
-      <td><a href="12/">Submachine guns; Grenades</a></td>
+      <td><a href="12/">Hostage Taking (Barricade Incident)</a></td>
+      <td><a href="12/">Pan Am Lounge and Loading Pan Am 707</a></td>
+      <td><a href="12/">30</a></td>
+      <td><a href="12/">Black September</a></td>
+      <!-- <td><a href="12/"></a></td> -->
+      <!-- <td><a href="12/">Automatic firearms; Grenades; Incendiary</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="13/">Rome</a></td>
-      <td><a href="13/">Italy</a></td>
-      <td><a href="13/">1973</a></td>
-      <td><a href="13/">Hostage Taking (Barricade Incident)</a></td>
-      <td><a href="13/">Pan Am Lounge and Loading Pan Am 707</a></td>
-      <td><a href="13/">30</a></td>
-      <td><a href="13/">Black September</a></td>
-      <td><a href="13/"></a></td>
-      <td><a href="13/">Automatic firearms; Grenades; Incendiary</a></td>
+      <td><a href="13/">Omagh</a></td>
+      <td><a href="13/">United Kingdom</a></td>
+      <td><a href="13/">1998</a></td>
+      <td><a href="13/">Bombing/Explosion</a></td>
+      <td><a href="13/">Civilians in Omagh, Northern Ireland</a></td>
+      <td><a href="13/">29</a></td>
+      <td><a href="13/">Real Irish Republican Army (RIRA)</a></td>
+      <!-- <td><a href="13/">Unknown</a></td> -->
+      <!-- <td><a href="13/"></a></td> -->
     </tr>
     
     <tr>
-      <td><a href="14/">Omagh</a></td>
+      <td><a href="14/">London</a></td>
       <td><a href="14/">United Kingdom</a></td>
-      <td><a href="14/">1998</a></td>
+      <td><a href="14/">2005</a></td>
       <td><a href="14/">Bombing/Explosion</a></td>
-      <td><a href="14/">Civilians in Omagh, Northern Ireland</a></td>
-      <td><a href="14/">29</a></td>
-      <td><a href="14/">Real Irish Republican Army (RIRA)</a></td>
-      <td><a href="14/">Unknown</a></td>
-      <td><a href="14/"></a></td>
+      <td><a href="14/">Number 216 Train</a></td>
+      <td><a href="14/">27</a></td>
+      <td><a href="14/">Secret Organization of al-Qaida in Europe</a></td>
+      <!-- <td><a href="14/">Unknown</a></td> -->
+      <!-- <td><a href="14/">The explosive materials were homemade peroxide-based devices packed in rucksacks. It is estimated that less than 10 pounds of this explosive was used in each attack. While the manufacturing of this explosive is a dangerous process, it does not require great skill.</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="15/">London</a></td>
-      <td><a href="15/">United Kingdom</a></td>
-      <td><a href="15/">2005</a></td>
+      <td><a href="15/">Dublin</a></td>
+      <td><a href="15/">Ireland</a></td>
+      <td><a href="15/">1974</a></td>
       <td><a href="15/">Bombing/Explosion</a></td>
-      <td><a href="15/">Number 216 Train</a></td>
-      <td><a href="15/">27</a></td>
-      <td><a href="15/">Secret Organization of al-Qaida in Europe</a></td>
-      <td><a href="15/">Unknown</a></td>
-      <td><a href="15/">The explosive materials were homemade peroxide-based devices packed in rucksacks. It is estimated that less than 10 pounds of this explosive was used in each attack. While the manufacturing of this explosive is a dangerous process, it does not require great skill.</a></td>
+      <td><a href="15/">26 civilians</a></td>
+      <td><a href="15/">26</a></td>
+      <td><a href="15/">Ulster Volunteer Force (UVF)</a></td>
+      <!-- <td><a href="15/"></a></td> -->
+      <!-- <td><a href="15/">Car bomb</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="16/">Dublin</a></td>
-      <td><a href="16/">Ireland</a></td>
-      <td><a href="16/">1974</a></td>
+      <td><a href="16/">Madrid</a></td>
+      <td><a href="16/">Spain</a></td>
+      <td><a href="16/">2004</a></td>
       <td><a href="16/">Bombing/Explosion</a></td>
-      <td><a href="16/">26 civilians</a></td>
-      <td><a href="16/">26</a></td>
-      <td><a href="16/">Ulster Volunteer Force (UVF)</a></td>
-      <td><a href="16/"></a></td>
-      <td><a href="16/">Car bomb</a></td>
+      <td><a href="16/">Indiscriminate civilians on commuter trains in Madrid, Spain.</a></td>
+      <td><a href="16/">19</a></td>
+      <td><a href="16/">Abu Hafs al-Masri Brigades</a></td>
+      <!-- <td><a href="16/">Abu Hafs al-Masri Brigades said that the attack was retribution for Spain&#39;s cooperation with the United States in the Iraq War.</a></td> -->
+      <!-- <td><a href="16/">Twenty two pounds of explosives were located in backpacks and detonated by cell phones.</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="17/">Madrid</a></td>
-      <td><a href="17/">Spain</a></td>
-      <td><a href="17/">2004</a></td>
-      <td><a href="17/">Bombing/Explosion</a></td>
-      <td><a href="17/">Indiscriminate civilians on commuter trains in Madrid, Spain.</a></td>
+      <td><a href="17/">Paris</a></td>
+      <td><a href="17/">France</a></td>
+      <td><a href="17/">2015</a></td>
+      <td><a href="17/">Armed Assault</a></td>
+      <td><a href="17/">Bar</a></td>
       <td><a href="17/">19</a></td>
-      <td><a href="17/">Abu Hafs al-Masri Brigades</a></td>
-      <td><a href="17/">Abu Hafs al-Masri Brigades said that the attack was retribution for Spain&#39;s cooperation with the United States in the Iraq War.</a></td>
-      <td><a href="17/">Twenty two pounds of explosives were located in backpacks and detonated by cell phones.</a></td>
+      <td><a href="17/">Islamic State of Iraq and the Levant (ISIL)</a></td>
+      <!-- <td><a href="17/">The Islamic State of Iraq and the Levant (ISIL) claimed responsibility for the incident and stated that the attack was carried out in retaliation for France&#39;s participation in the United States-led coalition that carried out airstrikes on ISIL targets in Iraq and Syria.</a></td> -->
+      <!-- <td><a href="17/"></a></td> -->
     </tr>
     
     <tr>
-      <td><a href="18/">Paris</a></td>
-      <td><a href="18/">France</a></td>
-      <td><a href="18/">2015</a></td>
-      <td><a href="18/">Armed Assault</a></td>
-      <td><a href="18/">Bar</a></td>
-      <td><a href="18/">19</a></td>
-      <td><a href="18/">Islamic State of Iraq and the Levant (ISIL)</a></td>
-      <td><a href="18/">The Islamic State of Iraq and the Levant (ISIL) claimed responsibility for the incident and stated that the attack was carried out in retaliation for France&#39;s participation in the United States-led coalition that carried out airstrikes on ISIL targets in Iraq and Syria.</a></td>
-      <td><a href="18/"></a></td>
+      <td><a href="18/">Warrenpoint</a></td>
+      <td><a href="18/">United Kingdom</a></td>
+      <td><a href="18/">1979</a></td>
+      <td><a href="18/">Bombing/Explosion</a></td>
+      <td><a href="18/">army truck</a></td>
+      <td><a href="18/">18</a></td>
+      <td><a href="18/">Irish Republican Army (IRA)</a></td>
+      <!-- <td><a href="18/"></a></td> -->
+      <!-- <td><a href="18/">Land mine; Explosive</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="19/">Warrenpoint</a></td>
-      <td><a href="19/">United Kingdom</a></td>
-      <td><a href="19/">1979</a></td>
+      <td><a href="19/">Aporto</a></td>
+      <td><a href="19/">Spain</a></td>
+      <td><a href="19/">1985</a></td>
       <td><a href="19/">Bombing/Explosion</a></td>
-      <td><a href="19/">army truck</a></td>
+      <td><a href="19/">El Descanso restaurant</a></td>
       <td><a href="19/">18</a></td>
-      <td><a href="19/">Irish Republican Army (IRA)</a></td>
-      <td><a href="19/"></a></td>
-      <td><a href="19/">Land mine; Explosive</a></td>
+      <td><a href="19/">Hezbollah</a></td>
+      <!-- <td><a href="19/"></a></td> -->
+      <!-- <td><a href="19/">Explosive</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="20/">Aporto</a></td>
-      <td><a href="20/">Spain</a></td>
-      <td><a href="20/">1985</a></td>
-      <td><a href="20/">Bombing/Explosion</a></td>
-      <td><a href="20/">El Descanso restaurant</a></td>
-      <td><a href="20/">18</a></td>
-      <td><a href="20/">Hezbollah</a></td>
-      <td><a href="20/"></a></td>
-      <td><a href="20/">Explosive</a></td>
+      <td><a href="20/">Munich</a></td>
+      <td><a href="20/">West Germany (FRG)</a></td>
+      <td><a href="20/">1972</a></td>
+      <td><a href="20/">Assassination</a></td>
+      <td><a href="20/">Israeli Olympic Team</a></td>
+      <td><a href="20/">16</a></td>
+      <td><a href="20/">Black September</a></td>
+      <!-- <td><a href="20/"></a></td> -->
+      <!-- <td><a href="20/">Automatic firearms</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="21/">Munich</a></td>
-      <td><a href="21/">West Germany (FRG)</a></td>
-      <td><a href="21/">1972</a></td>
+      <td><a href="21/">Nicosia</a></td>
+      <td><a href="21/">Cyprus</a></td>
+      <td><a href="21/">1978</a></td>
       <td><a href="21/">Assassination</a></td>
-      <td><a href="21/">Israeli Olympic Team</a></td>
+      <td><a href="21/">Youssef Sebai</a></td>
       <td><a href="21/">16</a></td>
-      <td><a href="21/">Black September</a></td>
-      <td><a href="21/"></a></td>
-      <td><a href="21/">Automatic firearms</a></td>
+      <td><a href="21/">Unaffiliated Individual(s)</a></td>
+      <!-- <td><a href="21/">In protest of pro-Israel articles in the Egyptian newspaper edited by Mr. Sebai.</a></td> -->
+      <!-- <td><a href="21/">No additional information available.</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="22/">Nicosia</a></td>
-      <td><a href="22/">Cyprus</a></td>
-      <td><a href="22/">1978</a></td>
-      <td><a href="22/">Assassination</a></td>
-      <td><a href="22/">Youssef Sebai</a></td>
+      <td><a href="22/">Ballykelly</a></td>
+      <td><a href="22/">United Kingdom</a></td>
+      <td><a href="22/">1982</a></td>
+      <td><a href="22/">Bombing/Explosion</a></td>
+      <td><a href="22/">Droppin Well Pub (discotheque)</a></td>
       <td><a href="22/">16</a></td>
-      <td><a href="22/">Unaffiliated Individual(s)</a></td>
-      <td><a href="22/">In protest of pro-Israel articles in the Egyptian newspaper edited by Mr. Sebai.</a></td>
-      <td><a href="22/">No additional information available.</a></td>
+      <td><a href="22/">Irish National Liberation Army (INLA)</a></td>
+      <!-- <td><a href="22/"></a></td> -->
+      <!-- <td><a href="22/">Explosive</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="23/">Ballykelly</a></td>
-      <td><a href="23/">United Kingdom</a></td>
-      <td><a href="23/">1982</a></td>
+      <td><a href="23/">Rome</a></td>
+      <td><a href="23/">Italy</a></td>
+      <td><a href="23/">1985</a></td>
       <td><a href="23/">Bombing/Explosion</a></td>
-      <td><a href="23/">Droppin Well Pub (discotheque)</a></td>
+      <td><a href="23/">Check in desk of El Al Airlines</a></td>
       <td><a href="23/">16</a></td>
-      <td><a href="23/">Irish National Liberation Army (INLA)</a></td>
-      <td><a href="23/"></a></td>
-      <td><a href="23/">Explosive</a></td>
+      <td><a href="23/">Abu Nidal Organization (ANO)</a></td>
+      <!-- <td><a href="23/"></a></td> -->
+      <!-- <td><a href="23/">Automatic firearms; Grenades</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="24/">Rome</a></td>
-      <td><a href="24/">Italy</a></td>
-      <td><a href="24/">1985</a></td>
+      <td><a href="24/">Belfast</a></td>
+      <td><a href="24/">United Kingdom</a></td>
+      <td><a href="24/">1971</a></td>
       <td><a href="24/">Bombing/Explosion</a></td>
-      <td><a href="24/">Check in desk of El Al Airlines</a></td>
-      <td><a href="24/">16</a></td>
-      <td><a href="24/">Abu Nidal Organization (ANO)</a></td>
-      <td><a href="24/"></a></td>
-      <td><a href="24/">Automatic firearms; Grenades</a></td>
+      <td><a href="24/">15 Catholics</a></td>
+      <td><a href="24/">15</a></td>
+      <td><a href="24/">Ulster Volunteer Force (UVF)</a></td>
+      <!-- <td><a href="24/"></a></td> -->
+      <!-- <td><a href="24/">Bomb</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="25/">Belfast</a></td>
-      <td><a href="25/">United Kingdom</a></td>
-      <td><a href="25/">1971</a></td>
+      <td><a href="25/">Florence</a></td>
+      <td><a href="25/">Italy</a></td>
+      <td><a href="25/">1984</a></td>
       <td><a href="25/">Bombing/Explosion</a></td>
-      <td><a href="25/">15 Catholics</a></td>
+      <td><a href="25/">Express Train (14 Coach Naples-Milan)</a></td>
       <td><a href="25/">15</a></td>
-      <td><a href="25/">Ulster Volunteer Force (UVF)</a></td>
-      <td><a href="25/"></a></td>
-      <td><a href="25/">Bomb</a></td>
+      <td><a href="25/">New Order</a></td>
+      <!-- <td><a href="25/"></a></td> -->
+      <!-- <td><a href="25/">Explosive</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="26/">Florence</a></td>
-      <td><a href="26/">Italy</a></td>
-      <td><a href="26/">1984</a></td>
+      <td><a href="26/">Barcelona</a></td>
+      <td><a href="26/">Spain</a></td>
+      <td><a href="26/">1987</a></td>
       <td><a href="26/">Bombing/Explosion</a></td>
-      <td><a href="26/">Express Train (14 Coach Naples-Milan)</a></td>
+      <td><a href="26/">Parking Garage</a></td>
       <td><a href="26/">15</a></td>
-      <td><a href="26/">New Order</a></td>
-      <td><a href="26/"></a></td>
-      <td><a href="26/">Explosive</a></td>
+      <td><a href="26/">Basque Fatherland and Freedom (ETA)</a></td>
+      <!-- <td><a href="26/"></a></td> -->
+      <!-- <td><a href="26/">Car bomb - in/under vehicle</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="27/">Barcelona</a></td>
-      <td><a href="27/">Spain</a></td>
-      <td><a href="27/">1987</a></td>
-      <td><a href="27/">Bombing/Explosion</a></td>
-      <td><a href="27/">Parking Garage</a></td>
+      <td><a href="27/">Paris</a></td>
+      <td><a href="27/">France</a></td>
+      <td><a href="27/">2015</a></td>
+      <td><a href="27/">Armed Assault</a></td>
+      <td><a href="27/">Restaurants</a></td>
       <td><a href="27/">15</a></td>
-      <td><a href="27/">Basque Fatherland and Freedom (ETA)</a></td>
-      <td><a href="27/"></a></td>
-      <td><a href="27/">Car bomb - in/under vehicle</a></td>
+      <td><a href="27/">Islamic State of Iraq and the Levant (ISIL)</a></td>
+      <!-- <td><a href="27/">The Islamic State of Iraq and the Levant (ISIL) claimed responsibility for the incident and stated that the attack was carried out in retaliation for France&#39;s participation in the United States-led coalition that carried out airstrikes on ISIL targets in Iraq and Syria.</a></td> -->
+      <!-- <td><a href="27/">Kalashnikovs were used in the attack.</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="28/">Paris</a></td>
-      <td><a href="28/">France</a></td>
-      <td><a href="28/">2015</a></td>
-      <td><a href="28/">Armed Assault</a></td>
-      <td><a href="28/">Restaurants</a></td>
-      <td><a href="28/">15</a></td>
-      <td><a href="28/">Islamic State of Iraq and the Levant (ISIL)</a></td>
-      <td><a href="28/">The Islamic State of Iraq and the Levant (ISIL) claimed responsibility for the incident and stated that the attack was carried out in retaliation for France&#39;s participation in the United States-led coalition that carried out airstrikes on ISIL targets in Iraq and Syria.</a></td>
-      <td><a href="28/">Kalashnikovs were used in the attack.</a></td>
+      <td><a href="28/">London</a></td>
+      <td><a href="28/">United Kingdom</a></td>
+      <td><a href="28/">2005</a></td>
+      <td><a href="28/">Bombing/Explosion</a></td>
+      <td><a href="28/">Number 30 Bus</a></td>
+      <td><a href="28/">14</a></td>
+      <td><a href="28/">Secret Organization of al-Qaida in Europe</a></td>
+      <!-- <td><a href="28/">Unknown</a></td> -->
+      <!-- <td><a href="28/">The explosive materials were homemade peroxide-based devices packed in rucksacks. It is estimated that less than 10 pounds of this explosive was used in each attack. While the manufacturing of this explosive is a dangerous process, it does not require great skill.</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="29/">London</a></td>
+      <td><a href="29/">Belfast</a></td>
       <td><a href="29/">United Kingdom</a></td>
-      <td><a href="29/">2005</a></td>
+      <td><a href="29/">1978</a></td>
       <td><a href="29/">Bombing/Explosion</a></td>
-      <td><a href="29/">Number 30 Bus</a></td>
+      <td><a href="29/">Restaurant Lamon House</a></td>
       <td><a href="29/">14</a></td>
-      <td><a href="29/">Secret Organization of al-Qaida in Europe</a></td>
-      <td><a href="29/">Unknown</a></td>
-      <td><a href="29/">The explosive materials were homemade peroxide-based devices packed in rucksacks. It is estimated that less than 10 pounds of this explosive was used in each attack. While the manufacturing of this explosive is a dangerous process, it does not require great skill.</a></td>
+      <td><a href="29/">Irish Republican Army (IRA)</a></td>
+      <!-- <td><a href="29/"></a></td> -->
+      <!-- <td><a href="29/">Explosive</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="30/">Belfast</a></td>
-      <td><a href="30/">United Kingdom</a></td>
-      <td><a href="30/">1978</a></td>
-      <td><a href="30/">Bombing/Explosion</a></td>
-      <td><a href="30/">Restaurant Lamon House</a></td>
+      <td><a href="30/">Zug</a></td>
+      <td><a href="30/">Switzerland</a></td>
+      <td><a href="30/">2001</a></td>
+      <td><a href="30/">Armed Assault</a></td>
+      <td><a href="30/">Zug Canton Assembly building</a></td>
       <td><a href="30/">14</a></td>
-      <td><a href="30/">Irish Republican Army (IRA)</a></td>
-      <td><a href="30/"></a></td>
-      <td><a href="30/">Explosive</a></td>
+      <td><a href="30/">Friedrich Leibacher</a></td>
+      <!-- <td><a href="30/">The perpetrator demanded that an appeal he had recently filed be reviewed by the parliament.</a></td> -->
+      <!-- <td><a href="30/"></a></td> -->
     </tr>
     
     <tr>
-      <td><a href="31/">Zug</a></td>
-      <td><a href="31/">Switzerland</a></td>
-      <td><a href="31/">2001</a></td>
-      <td><a href="31/">Armed Assault</a></td>
-      <td><a href="31/">Zug Canton Assembly building</a></td>
-      <td><a href="31/">14</a></td>
-      <td><a href="31/">Unknown</a></td>
-      <td><a href="31/">The perpetrator demanded that an appeal he had recently filed be reviewed by the parliament.</a></td>
-      <td><a href="31/"></a></td>
+      <td><a href="31/">Athens</a></td>
+      <td><a href="31/">Greece</a></td>
+      <td><a href="31/">1976</a></td>
+      <td><a href="31/">Hijacking</a></td>
+      <td><a href="31/">Airbus A-300</a></td>
+      <td><a href="31/">13</a></td>
+      <td><a href="31/">Palestine Liberation Organization (PLO)</a></td>
+      <!-- <td><a href="31/"></a></td> -->
+      <!-- <td><a href="31/"></a></td> -->
     </tr>
     
     <tr>
-      <td><a href="32/">Athens</a></td>
-      <td><a href="32/">Greece</a></td>
-      <td><a href="32/">1976</a></td>
-      <td><a href="32/">Hijacking</a></td>
-      <td><a href="32/">Airbus A-300</a></td>
+      <td><a href="32/">Munich</a></td>
+      <td><a href="32/">West Germany (FRG)</a></td>
+      <td><a href="32/">1980</a></td>
+      <td><a href="32/">Bombing/Explosion</a></td>
+      <td><a href="32/">unknown</a></td>
       <td><a href="32/">13</a></td>
-      <td><a href="32/">Palestine Liberation Organization (PLO)</a></td>
-      <td><a href="32/"></a></td>
-      <td><a href="32/"></a></td>
+      <td><a href="32/">Neo-Nazi Group</a></td>
+      <!-- <td><a href="32/"></a></td> -->
+      <!-- <td><a href="32/">Explosive</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="33/">Munich</a></td>
-      <td><a href="33/">West Germany (FRG)</a></td>
-      <td><a href="33/">1980</a></td>
+      <td><a href="33/">Batley</a></td>
+      <td><a href="33/">United Kingdom</a></td>
+      <td><a href="33/">1974</a></td>
       <td><a href="33/">Bombing/Explosion</a></td>
-      <td><a href="33/">unknown</a></td>
-      <td><a href="33/">13</a></td>
-      <td><a href="33/">Neo-Nazi Group</a></td>
-      <td><a href="33/"></a></td>
-      <td><a href="33/">Explosive</a></td>
+      <td><a href="33/">British Military Bus</a></td>
+      <td><a href="33/">12</a></td>
+      <td><a href="33/">Irish Republican Army (IRA)</a></td>
+      <!-- <td><a href="33/"></a></td> -->
+      <!-- <td><a href="33/">Explosive</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="34/">Batley</a></td>
-      <td><a href="34/">United Kingdom</a></td>
+      <td><a href="34/">Bologna</a></td>
+      <td><a href="34/">Italy</a></td>
       <td><a href="34/">1974</a></td>
       <td><a href="34/">Bombing/Explosion</a></td>
-      <td><a href="34/">British Military Bus</a></td>
+      <td><a href="34/">Tome to Munich Express train</a></td>
       <td><a href="34/">12</a></td>
-      <td><a href="34/">Irish Republican Army (IRA)</a></td>
-      <td><a href="34/"></a></td>
-      <td><a href="34/">Explosive</a></td>
+      <td><a href="34/">Black Order</a></td>
+      <!-- <td><a href="34/"></a></td> -->
+      <!-- <td><a href="34/">Explosive</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="35/">Bologna</a></td>
-      <td><a href="35/">Italy</a></td>
+      <td><a href="35/">Madrid</a></td>
+      <td><a href="35/">Spain</a></td>
       <td><a href="35/">1974</a></td>
       <td><a href="35/">Bombing/Explosion</a></td>
-      <td><a href="35/">Tome to Munich Express train</a></td>
+      <td><a href="35/">Cafe Rolando</a></td>
       <td><a href="35/">12</a></td>
-      <td><a href="35/">Black Order</a></td>
-      <td><a href="35/"></a></td>
-      <td><a href="35/">Explosive</a></td>
+      <td><a href="35/">Basque Fatherland and Freedom (ETA)</a></td>
+      <!-- <td><a href="35/"></a></td> -->
+      <!-- <td><a href="35/">Explosive</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="36/">Madrid</a></td>
-      <td><a href="36/">Spain</a></td>
-      <td><a href="36/">1974</a></td>
-      <td><a href="36/">Bombing/Explosion</a></td>
-      <td><a href="36/">Cafe Rolando</a></td>
+      <td><a href="36/">Paris</a></td>
+      <td><a href="36/">France</a></td>
+      <td><a href="36/">2015</a></td>
+      <td><a href="36/">Hostage Taking (Barricade Incident)</a></td>
+      <td><a href="36/">Offices</a></td>
       <td><a href="36/">12</a></td>
-      <td><a href="36/">Basque Fatherland and Freedom (ETA)</a></td>
-      <td><a href="36/"></a></td>
-      <td><a href="36/">Explosive</a></td>
+      <td><a href="36/">Al-Qaida in the Arabian Peninsula (AQAP)</a></td>
+      <!-- <td><a href="36/">Al-Qa`ida in the Arabian Peninsula (AQAP) claimed responsibility for the incident and stated that the attack was carried out in retaliation for Charlie Hebdo&#39;s continuous publication of images of the Prophet Muhammad.</a></td> -->
+      <!-- <td><a href="36/">A grenade launcher, Kalashnikov assault rifles, and pistols were used in the attack.</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="37/">Paris</a></td>
-      <td><a href="37/">France</a></td>
-      <td><a href="37/">2015</a></td>
-      <td><a href="37/">Hostage Taking (Barricade Incident)</a></td>
-      <td><a href="37/">Offices</a></td>
-      <td><a href="37/">12</a></td>
-      <td><a href="37/">Al-Qaida in the Arabian Peninsula (AQAP)</a></td>
-      <td><a href="37/">Al-Qa`ida in the Arabian Peninsula (AQAP) claimed responsibility for the incident and stated that the attack was carried out in retaliation for Charlie Hebdo&#39;s continuous publication of images of the Prophet Muhammad.</a></td>
-      <td><a href="37/">A grenade launcher, Kalashnikov assault rifles, and pistols were used in the attack.</a></td>
+      <td><a href="37/">Brescia</a></td>
+      <td><a href="37/">Italy</a></td>
+      <td><a href="37/">1974</a></td>
+      <td><a href="37/">Bombing/Explosion</a></td>
+      <td><a href="37/">Leftist Meeting</a></td>
+      <td><a href="37/">11</a></td>
+      <td><a href="37/">Black Order</a></td>
+      <!-- <td><a href="37/"></a></td> -->
+      <!-- <td><a href="37/">Explosive</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="38/">Brescia</a></td>
-      <td><a href="38/">Italy</a></td>
-      <td><a href="38/">1974</a></td>
+      <td><a href="38/">Enniskillen</a></td>
+      <td><a href="38/">United Kingdom</a></td>
+      <td><a href="38/">1987</a></td>
       <td><a href="38/">Bombing/Explosion</a></td>
-      <td><a href="38/">Leftist Meeting</a></td>
+      <td><a href="38/">Remembrance Day Celebration</a></td>
       <td><a href="38/">11</a></td>
-      <td><a href="38/">Black Order</a></td>
-      <td><a href="38/"></a></td>
-      <td><a href="38/">Explosive</a></td>
+      <td><a href="38/">Irish Republican Army (IRA)</a></td>
+      <!-- <td><a href="38/"></a></td> -->
+      <!-- <td><a href="38/">Explosive</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="39/">Enniskillen</a></td>
-      <td><a href="39/">United Kingdom</a></td>
+      <td><a href="39/">Zaragoza</a></td>
+      <td><a href="39/">Spain</a></td>
       <td><a href="39/">1987</a></td>
       <td><a href="39/">Bombing/Explosion</a></td>
-      <td><a href="39/">Remembrance Day Celebration</a></td>
+      <td><a href="39/">Civil guard family housing</a></td>
       <td><a href="39/">11</a></td>
-      <td><a href="39/">Irish Republican Army (IRA)</a></td>
-      <td><a href="39/"></a></td>
-      <td><a href="39/">Explosive</a></td>
+      <td><a href="39/">Basque Fatherland and Freedom (ETA)</a></td>
+      <!-- <td><a href="39/"></a></td> -->
+      <!-- <td><a href="39/">Explosive</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="40/">Zaragoza</a></td>
-      <td><a href="40/">Spain</a></td>
-      <td><a href="40/">1987</a></td>
+      <td><a href="40/">Deal</a></td>
+      <td><a href="40/">United Kingdom</a></td>
+      <td><a href="40/">1989</a></td>
       <td><a href="40/">Bombing/Explosion</a></td>
-      <td><a href="40/">Civil guard family housing</a></td>
+      <td><a href="40/">barracks, Royal Marines School of Music</a></td>
       <td><a href="40/">11</a></td>
-      <td><a href="40/">Basque Fatherland and Freedom (ETA)</a></td>
-      <td><a href="40/"></a></td>
-      <td><a href="40/">Explosive</a></td>
+      <td><a href="40/">Irish Republican Army (IRA)</a></td>
+      <!-- <td><a href="40/"></a></td> -->
+      <!-- <td><a href="40/">Explosive</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="41/">Deal</a></td>
+      <td><a href="41/">Birmingham</a></td>
       <td><a href="41/">United Kingdom</a></td>
-      <td><a href="41/">1989</a></td>
+      <td><a href="41/">1974</a></td>
       <td><a href="41/">Bombing/Explosion</a></td>
-      <td><a href="41/">barracks, Royal Marines School of Music</a></td>
-      <td><a href="41/">11</a></td>
+      <td><a href="41/">2 Pubs</a></td>
+      <td><a href="41/">10</a></td>
       <td><a href="41/">Irish Republican Army (IRA)</a></td>
-      <td><a href="41/"></a></td>
-      <td><a href="41/">Explosive</a></td>
+      <!-- <td><a href="41/"></a></td> -->
+      <!-- <td><a href="41/">Explosive</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="42/">Birmingham</a></td>
+      <td><a href="42/">Kingsmill</a></td>
       <td><a href="42/">United Kingdom</a></td>
-      <td><a href="42/">1974</a></td>
-      <td><a href="42/">Bombing/Explosion</a></td>
-      <td><a href="42/">2 Pubs</a></td>
+      <td><a href="42/">1976</a></td>
+      <td><a href="42/">Assassination</a></td>
+      <td><a href="42/">Ten Protestants in minibus</a></td>
       <td><a href="42/">10</a></td>
-      <td><a href="42/">Irish Republican Army (IRA)</a></td>
-      <td><a href="42/"></a></td>
-      <td><a href="42/">Explosive</a></td>
+      <td><a href="42/">Republican Action Force</a></td>
+      <!-- <td><a href="42/"></a></td> -->
+      <!-- <td><a href="42/">Automatic firearm</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="44/">Kingsmill</a></td>
-      <td><a href="44/">United Kingdom</a></td>
-      <td><a href="44/">1976</a></td>
-      <td><a href="44/">Assassination</a></td>
-      <td><a href="44/">Ten Protestants in minibus</a></td>
+      <td><a href="43/">Rome</a></td>
+      <td><a href="43/">Italy</a></td>
+      <td><a href="43/">1980</a></td>
+      <td><a href="43/">Bombing/Explosion</a></td>
+      <td><a href="43/">Turkish Airlines Offices</a></td>
+      <td><a href="43/">10</a></td>
+      <td><a href="43/">Armenian Secret Army for the Liberation of Armenia</a></td>
+      <!-- <td><a href="43/"></a></td> -->
+      <!-- <td><a href="43/">Explosive</a></td> -->
+    </tr>
+    
+    <tr>
+      <td><a href="44/">Aegina</a></td>
+      <td><a href="44/">Greece</a></td>
+      <td><a href="44/">1988</a></td>
+      <td><a href="44/">Armed Assault</a></td>
+      <td><a href="44/">City of Porras Ferry</a></td>
       <td><a href="44/">10</a></td>
-      <td><a href="44/">Republican Action Force</a></td>
-      <td><a href="44/"></a></td>
-      <td><a href="44/">Automatic firearm</a></td>
+      <td><a href="44/">Hezbollah</a></td>
+      <!-- <td><a href="44/"></a></td> -->
+      <!-- <td><a href="44/">Automatic firearm; Explosives</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="45/">Rome</a></td>
-      <td><a href="45/">Italy</a></td>
-      <td><a href="45/">1980</a></td>
-      <td><a href="45/">Bombing/Explosion</a></td>
-      <td><a href="45/">Turkish Airlines Offices</a></td>
-      <td><a href="45/">10</a></td>
-      <td><a href="45/">Armenian Secret Army for the Liberation of Armenia</a></td>
-      <td><a href="45/"></a></td>
-      <td><a href="45/">Explosive</a></td>
+      <td><a href="45/">Tuusula</a></td>
+      <td><a href="45/">Finland</a></td>
+      <td><a href="45/">2007</a></td>
+      <td><a href="45/">Armed Assault</a></td>
+      <td><a href="45/">Students and teachers in the Jokela High School</a></td>
+      <td><a href="45/">9</a></td>
+      <td><a href="45/">Unaffiliated Individual(s)</a></td>
+      <!-- <td><a href="45/">According to news sources, the perpetrator posted videos on YouTube shortly before the shooting outlining his intentions, which included the elimination of &#34;disgraces of human race and failures of natural selection.&#34;  However, many believe that the specific goal was to carry out a copy-cat shooting of the Virginia Tech Shooting in April 2007.</a></td> -->
+      <!-- <td><a href="45/">The perpetrator had just registered his hand gun three weeks before the shooting.</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="46/">Aegina</a></td>
-      <td><a href="46/">Greece</a></td>
-      <td><a href="46/">1988</a></td>
-      <td><a href="46/">Armed Assault</a></td>
-      <td><a href="46/">City of Porras Ferry</a></td>
-      <td><a href="46/">10</a></td>
-      <td><a href="46/">Hezbollah</a></td>
-      <td><a href="46/"></a></td>
-      <td><a href="46/">Automatic firearm; Explosives</a></td>
+      <td><a href="46/">Claudy</a></td>
+      <td><a href="46/">United Kingdom</a></td>
+      <td><a href="46/">1972</a></td>
+      <td><a href="46/">Bombing/Explosion</a></td>
+      <td><a href="46/">nine civilians</a></td>
+      <td><a href="46/">9</a></td>
+      <td><a href="46/">Irish Republican Army (IRA)</a></td>
+      <!-- <td><a href="46/"></a></td> -->
+      <!-- <td><a href="46/">Car bomb</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="47/">Tuusula</a></td>
-      <td><a href="47/">Finland</a></td>
-      <td><a href="47/">2007</a></td>
+      <td><a href="47/">Madrid</a></td>
+      <td><a href="47/">Spain</a></td>
+      <td><a href="47/">1977</a></td>
       <td><a href="47/">Armed Assault</a></td>
-      <td><a href="47/">Students and teachers in the Jokela High School</a></td>
+      <td><a href="47/">Su source document, Lawyers</a></td>
       <td><a href="47/">9</a></td>
-      <td><a href="47/">Unaffiliated Individual(s)</a></td>
-      <td><a href="47/">According to news sources, the perpetrator posted videos on YouTube shortly before the shooting outlining his intentions, which included the elimination of &#34;disgraces of human race and failures of natural selection.&#34;  However, many believe that the specific goal was to carry out a copy-cat shooting of the Virginia Tech Shooting in April 2007.</a></td>
-      <td><a href="47/">The perpetrator had just registered his hand gun three weeks before the shooting.</a></td>
+      <td><a href="47/">Argentine Anticommunist Alliance (AAA)</a></td>
+      <!-- <td><a href="47/"></a></td> -->
+      <!-- <td><a href="47/">Automatic firearm</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="48/">Claudy</a></td>
-      <td><a href="48/">United Kingdom</a></td>
-      <td><a href="48/">1972</a></td>
-      <td><a href="48/">Bombing/Explosion</a></td>
-      <td><a href="48/">nine civilians</a></td>
-      <td><a href="48/">9</a></td>
-      <td><a href="48/">Irish Republican Army (IRA)</a></td>
+      <td><a href="48/">Marseilles</a></td>
+      <td><a href="48/">France</a></td>
+      <td><a href="48/">1978</a></td>
+      <td><a href="48/">Armed Assault</a></td>
       <td><a href="48/"></a></td>
-      <td><a href="48/">Car bomb</a></td>
+      <td><a href="48/">9</a></td>
+      <td><a href="48/">unidentified attackers</a></td>
+      <!-- <td><a href="48/"></a></td> -->
+      <!-- <td><a href="48/">Pistol</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="49/">Madrid</a></td>
-      <td><a href="49/">Spain</a></td>
-      <td><a href="49/">1977</a></td>
-      <td><a href="49/">Armed Assault</a></td>
-      <td><a href="49/">Su source document, Lawyers</a></td>
+      <td><a href="49/">Donegal</a></td>
+      <td><a href="49/">Ireland</a></td>
+      <td><a href="49/">1980</a></td>
+      <td><a href="49/">Facility/Infrastructure Attack</a></td>
+      <td><a href="49/">Hotel</a></td>
       <td><a href="49/">9</a></td>
-      <td><a href="49/">Argentine Anticommunist Alliance (AAA)</a></td>
-      <td><a href="49/"></a></td>
-      <td><a href="49/">Automatic firearm</a></td>
+      <td><a href="49/">Irish Republican Army (IRA)</a></td>
+      <!-- <td><a href="49/"></a></td> -->
+      <!-- <td><a href="49/">Incendiary</a></td> -->
     </tr>
     
     <tr>
-      <td><a href="50/">Marseilles</a></td>
-      <td><a href="50/">France</a></td>
-      <td><a href="50/">1978</a></td>
-      <td><a href="50/">Armed Assault</a></td>
-      <td><a href="50/"></a></td>
+      <td><a href="50/">Newry</a></td>
+      <td><a href="50/">United Kingdom</a></td>
+      <td><a href="50/">1985</a></td>
+      <td><a href="50/">Bombing/Explosion</a></td>
+      <td><a href="50/">Ulster police base</a></td>
       <td><a href="50/">9</a></td>
-      <td><a href="50/">Unknown</a></td>
-      <td><a href="50/"></a></td>
-      <td><a href="50/">Pistol</a></td>
+      <td><a href="50/">Irish Republican Army (IRA)</a></td>
+      <!-- <td><a href="50/"></a></td> -->
+      <!-- <td><a href="50/">Mortar</a></td> -->
     </tr>
     
   </table>
@@ -771,20 +794,8 @@
         {
           "type": "Feature",
           "properties": {
-            "city": "Rome",
-            "id": "13"
-          },
-          "geometry": {
-            "type": "Point",
-            "coordinates": [12.494249, 41.89052]
-          }
-        },
-        
-        {
-          "type": "Feature",
-          "properties": {
             "city": "Omagh",
-            "id": "14"
+            "id": "13"
           },
           "geometry": {
             "type": "Point",
@@ -796,7 +807,7 @@
           "type": "Feature",
           "properties": {
             "city": "London",
-            "id": "15"
+            "id": "14"
           },
           "geometry": {
             "type": "Point",
@@ -808,7 +819,7 @@
           "type": "Feature",
           "properties": {
             "city": "Dublin",
-            "id": "16"
+            "id": "15"
           },
           "geometry": {
             "type": "Point",
@@ -820,7 +831,7 @@
           "type": "Feature",
           "properties": {
             "city": "Madrid",
-            "id": "17"
+            "id": "16"
           },
           "geometry": {
             "type": "Point",
@@ -832,7 +843,7 @@
           "type": "Feature",
           "properties": {
             "city": "Paris",
-            "id": "18"
+            "id": "17"
           },
           "geometry": {
             "type": "Point",
@@ -844,7 +855,7 @@
           "type": "Feature",
           "properties": {
             "city": "Warrenpoint",
-            "id": "19"
+            "id": "18"
           },
           "geometry": {
             "type": "Point",
@@ -856,7 +867,7 @@
           "type": "Feature",
           "properties": {
             "city": "Aporto",
-            "id": "20"
+            "id": "19"
           },
           "geometry": {
             "type": "Point",
@@ -868,7 +879,7 @@
           "type": "Feature",
           "properties": {
             "city": "Munich",
-            "id": "21"
+            "id": "20"
           },
           "geometry": {
             "type": "Point",
@@ -880,7 +891,7 @@
           "type": "Feature",
           "properties": {
             "city": "Nicosia",
-            "id": "22"
+            "id": "21"
           },
           "geometry": {
             "type": "Point",
@@ -892,7 +903,7 @@
           "type": "Feature",
           "properties": {
             "city": "Ballykelly",
-            "id": "23"
+            "id": "22"
           },
           "geometry": {
             "type": "Point",
@@ -904,7 +915,7 @@
           "type": "Feature",
           "properties": {
             "city": "Rome",
-            "id": "24"
+            "id": "23"
           },
           "geometry": {
             "type": "Point",
@@ -916,7 +927,7 @@
           "type": "Feature",
           "properties": {
             "city": "Belfast",
-            "id": "25"
+            "id": "24"
           },
           "geometry": {
             "type": "Point",
@@ -928,7 +939,7 @@
           "type": "Feature",
           "properties": {
             "city": "Florence",
-            "id": "26"
+            "id": "25"
           },
           "geometry": {
             "type": "Point",
@@ -940,7 +951,7 @@
           "type": "Feature",
           "properties": {
             "city": "Barcelona",
-            "id": "27"
+            "id": "26"
           },
           "geometry": {
             "type": "Point",
@@ -952,7 +963,7 @@
           "type": "Feature",
           "properties": {
             "city": "Paris",
-            "id": "28"
+            "id": "27"
           },
           "geometry": {
             "type": "Point",
@@ -964,7 +975,7 @@
           "type": "Feature",
           "properties": {
             "city": "London",
-            "id": "29"
+            "id": "28"
           },
           "geometry": {
             "type": "Point",
@@ -976,7 +987,7 @@
           "type": "Feature",
           "properties": {
             "city": "Belfast",
-            "id": "30"
+            "id": "29"
           },
           "geometry": {
             "type": "Point",
@@ -988,7 +999,7 @@
           "type": "Feature",
           "properties": {
             "city": "Zug",
-            "id": "31"
+            "id": "30"
           },
           "geometry": {
             "type": "Point",
@@ -1000,7 +1011,7 @@
           "type": "Feature",
           "properties": {
             "city": "Athens",
-            "id": "32"
+            "id": "31"
           },
           "geometry": {
             "type": "Point",
@@ -1012,7 +1023,7 @@
           "type": "Feature",
           "properties": {
             "city": "Munich",
-            "id": "33"
+            "id": "32"
           },
           "geometry": {
             "type": "Point",
@@ -1024,7 +1035,7 @@
           "type": "Feature",
           "properties": {
             "city": "Batley",
-            "id": "34"
+            "id": "33"
           },
           "geometry": {
             "type": "Point",
@@ -1036,7 +1047,7 @@
           "type": "Feature",
           "properties": {
             "city": "Bologna",
-            "id": "35"
+            "id": "34"
           },
           "geometry": {
             "type": "Point",
@@ -1048,7 +1059,7 @@
           "type": "Feature",
           "properties": {
             "city": "Madrid",
-            "id": "36"
+            "id": "35"
           },
           "geometry": {
             "type": "Point",
@@ -1060,7 +1071,7 @@
           "type": "Feature",
           "properties": {
             "city": "Paris",
-            "id": "37"
+            "id": "36"
           },
           "geometry": {
             "type": "Point",
@@ -1072,7 +1083,7 @@
           "type": "Feature",
           "properties": {
             "city": "Brescia",
-            "id": "38"
+            "id": "37"
           },
           "geometry": {
             "type": "Point",
@@ -1084,7 +1095,7 @@
           "type": "Feature",
           "properties": {
             "city": "Enniskillen",
-            "id": "39"
+            "id": "38"
           },
           "geometry": {
             "type": "Point",
@@ -1096,7 +1107,7 @@
           "type": "Feature",
           "properties": {
             "city": "Zaragoza",
-            "id": "40"
+            "id": "39"
           },
           "geometry": {
             "type": "Point",
@@ -1108,7 +1119,7 @@
           "type": "Feature",
           "properties": {
             "city": "Deal",
-            "id": "41"
+            "id": "40"
           },
           "geometry": {
             "type": "Point",
@@ -1120,7 +1131,7 @@
           "type": "Feature",
           "properties": {
             "city": "Birmingham",
-            "id": "42"
+            "id": "41"
           },
           "geometry": {
             "type": "Point",
@@ -1132,7 +1143,7 @@
           "type": "Feature",
           "properties": {
             "city": "Kingsmill",
-            "id": "44"
+            "id": "42"
           },
           "geometry": {
             "type": "Point",
@@ -1144,7 +1155,7 @@
           "type": "Feature",
           "properties": {
             "city": "Rome",
-            "id": "45"
+            "id": "43"
           },
           "geometry": {
             "type": "Point",
@@ -1156,7 +1167,7 @@
           "type": "Feature",
           "properties": {
             "city": "Aegina",
-            "id": "46"
+            "id": "44"
           },
           "geometry": {
             "type": "Point",
@@ -1168,7 +1179,7 @@
           "type": "Feature",
           "properties": {
             "city": "Tuusula",
-            "id": "47"
+            "id": "45"
           },
           "geometry": {
             "type": "Point",
@@ -1180,7 +1191,7 @@
           "type": "Feature",
           "properties": {
             "city": "Claudy",
-            "id": "48"
+            "id": "46"
           },
           "geometry": {
             "type": "Point",
@@ -1192,7 +1203,7 @@
           "type": "Feature",
           "properties": {
             "city": "Madrid",
-            "id": "49"
+            "id": "47"
           },
           "geometry": {
             "type": "Point",
@@ -1204,11 +1215,35 @@
           "type": "Feature",
           "properties": {
             "city": "Marseilles",
-            "id": "50"
+            "id": "48"
           },
           "geometry": {
             "type": "Point",
             "coordinates": [5.36978, 43.296482]
+          }
+        },
+        
+        {
+          "type": "Feature",
+          "properties": {
+            "city": "Donegal",
+            "id": "49"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-8.110714, 54.654487]
+          }
+        },
+        
+        {
+          "type": "Feature",
+          "properties": {
+            "city": "Newry",
+            "id": "50"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-6.33393, 54.18006]
           }
         }
         
