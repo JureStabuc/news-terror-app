@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
   <title>Document</title>
 </head>
 <body>
+  <div id="map" style="width:100%; height:400px;"></div>
   <h1>50 deadlisest terrorist attacks in western Europe</h1>
   <table border=1 cellpadding=7>
     <tr>
@@ -34,6 +37,40 @@
     </tr>
     {% endfor %}
   </table>
+  <script type="text/javascript">
+    var map = L.map("map").setView([50.0000, 20.0000], 4);
+    var osmLayer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Data, imagery and map information provided by <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>.'
+    });
+    map.addLayer(osmLayer);
+    var data = {
+      "type": "FeatureCollection",
+      "features": [
+        {% for obj in object_list %}
+        {
+          "type": "Feature",
+          "properties": {
+            "city": "{{ obj.city }}",
+            "id": "{{ obj.id }}"
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [{{ obj.longitude }}, {{ obj.latitude }}]
+          }
+        }{% if not loop.last %},{% endif %}
+        {% endfor %}
+      ]
+    };
+    var dataLayer = L.geoJson(data, {
+      onEachFeature: function(feature, layer) {
+        layer.bindPopup(
+          "<a href = '" + feature.properties.id + "/'>" + feature.properties.city + "</a>"
+        );
+      }
+    });
+    map.addLayer(dataLayer);
+  </script>
 
 </body>
 </html>
