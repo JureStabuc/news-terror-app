@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="map" style="width:100%; height:300px;"></div>
+  <h1>In 1980, 37 people died in attacks in London, United Kingdom</h1>
+  <script type="text/javascript">
+    var map = L.map("map").setView([51.500152, -0.126236], 16);
+    var osmLayer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: 'Data, imagery and map information provided by <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>.'
+    });
+    map.addLayer(osmLayer);
+    var marker = L.marker([51.500152, -0.126236]).addTo(map);
+  </script>
+</body>
+</html>
