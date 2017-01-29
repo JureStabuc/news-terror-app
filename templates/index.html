@@ -37,12 +37,12 @@
     {% for obj in object_list %}
     <tr>
       <td><a href="{{ obj.id }}/">{{ obj.city }}</a></td>
-      <td><a href="{{ obj.id }}/">{{ obj.country_txt}}</a></td>
-      <td><a href="{{ obj.id }}/">{{ obj.iyear }}</a></td>
-      <td><a href="{{ obj.id }}/">{{ obj.attacktype1_txt}}</a></td>
-      <td><a href="{{ obj.id }}/">{{ obj.target1 }}</a></td>
-      <td><a href="{{ obj.id }}/">{{ obj.nkill }}</a></td>
-      <td><a href="{{ obj.id }}/">{{ obj.gname }}</a></td>
+      <td>{{ obj.country_txt}}</td>
+      <td>{{ obj.iyear }}</td>
+      <td>{{ obj.attacktype1_txt}}</td>
+      <td>{{ obj.target1 }}</td>
+      <td>{{ obj.nkill }}</td>
+      <td>{{ obj.gname }}</td>
       <!-- <td><a href="{{ obj.id }}/">{{ obj.motive }}</a></td> -->
       <!-- <td><a href="{{ obj.id }}/">{{ obj.weapdetail}}</a></td> -->
     </tr>
