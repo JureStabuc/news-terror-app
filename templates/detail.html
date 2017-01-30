@@ -14,7 +14,7 @@
     <h1>In {{ object.iyear }}, {{ object.nkill }} people died in attacks in {{ object.city }}, {{ object.country_txt }}. The attack was carried out by {{ object.gname }}.</h1>
   </header>
   <div id="map" style="width:100%; height:300px;"></div>
-  <p><a href="{{ url_for('index', filename='index.html') }}">&laquo; Back</a></p>
+  <p><a href="{{ url_for('index') }}">&laquo; Back</a></p>
   <script type="text/javascript">
     var map = L.map("map").setView([{{ object.latitude }}, {{ object.longitude }}], 16);
     var osmLayer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
